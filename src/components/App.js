@@ -3,10 +3,9 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 import Menu from "./Menu";
 import Usuarios from "./Usuarios/index";
-import Publicaciones from "./Publicaciones/index"
-
-// Solo para ejercicio rapido
-const Tareas = () => <div>Tareas</div>;
+import Publicaciones from "./Publicaciones/index";
+import Tareas from "./Tareas";
+import TareasGuardar from "./Tareas/Guardar";
 
 const App = () => (
   <BrowserRouter>
@@ -15,6 +14,7 @@ const App = () => (
       <Route exact path="/" component={Usuarios} />
       <Route exact path="/tareas" component={Tareas} />
       <Route exact path="/publicaciones/:key" component={Publicaciones} />
+      <Route exact path="/tareas/guardar" component={TareasGuardar} />
     </div>
   </BrowserRouter>
 );

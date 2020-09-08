@@ -22,6 +22,12 @@ body {
   font-size: 20px;
 }
 
+.contenedor_tareas {
+  font-size: 20px;
+  margin-left: 50px;
+  margin-bottom: 70px;
+}
+
 #menu a {
   color: white;
   padding-right: 50px;
